@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SpecialOffers.css';
 import { products } from '../data/products';
 import { useCart } from '../context/CartContext';
 
 const SpecialOffers = () => {
   const { addToCart } = useCart();
+  const [imageErrors, setImageErrors] = useState({});
 
   // Pick a few products to feature as special offers (first 3 for now)
   const featured = products.slice(0, 3);
+
+  const fallbackImage = 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=500&h=500&fit=crop&q=80';
+
+  const handleImageError = (productId) => {
+    setImageErrors(prev => ({ ...prev, [productId]: true }));
+  };
 
   return (
     <section className="special-offers">
@@ -33,9 +40,10 @@ const SpecialOffers = () => {
               <div key={product.id} className="special-offer-card">
                 <div className="special-offer-image-wrap">
                   <img
-                    src={product.image}
+                    src={imageErrors[product.id] ? fallbackImage : product.image}
                     alt={product.name}
                     className="special-offer-image"
+                    onError={() => handleImageError(product.id)}
                   />
                 </div>
                 <div className="special-offer-info">

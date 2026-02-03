@@ -52,7 +52,7 @@ export const products = [
     id: 8,
     name: 'Webcam HD',
     price: 89.99,
-    image: 'https://images.unsplash.com/photo-1587825147138-346fb1865e92?w=500&h=500&fit=crop',
+    image: 'https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=500&h=500&fit=crop&q=80',
     description: '1080p HD webcam with built-in microphone',
   },
 ];
