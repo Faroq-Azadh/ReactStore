@@ -5,7 +5,7 @@ import './ProductList.css';
 
 const ProductList = () => {
   return (
-    <div className="product-list-container">
+    <div id="products" className="product-list-container">
       <h2 className="section-title">Our Products</h2>
       <div className="product-grid">
         {products.map((product) => (

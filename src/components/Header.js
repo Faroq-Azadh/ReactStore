@@ -11,13 +11,26 @@ const Header = () => {
     return cartItems.reduce((total, item) => total + (item.quantity || 1), 0);
   }, [cartItems]);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">
-          <h1>🛍️ ReactStore</h1>
+        <div className="logo" onClick={() => scrollToSection('home')} style={{ cursor: 'pointer' }}>
+          <h1>🛍️ My Store</h1>
         </div>
         <nav className="nav">
+          <div className="nav-links">
+            <button className="nav-link" onClick={() => scrollToSection('home')}>Home</button>
+            <button className="nav-link" onClick={() => scrollToSection('products')}>Products</button>
+            <button className="nav-link" onClick={() => scrollToSection('about')}>About</button>
+            <button className="nav-link" onClick={() => scrollToSection('contact')}>Contact</button>
+          </div>
           {user ? (
             <button className="account-button" onClick={() => setIsProfileOpen(true)}>
               <span className="account-icon">👤</span>

@@ -4,8 +4,12 @@ import { AuthProvider } from './context/AuthContext';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import ProductList from './components/ProductList';
+import ImageGallery from './components/ImageGallery';
+import About from './components/About';
+import Contact from './components/Contact';
 import ShoppingCart from './components/ShoppingCart';
 import SpecialOffers from './components/SpecialOffers';
+import Footer from './components/Footer';
 import Login from './components/Login';
 import Register from './components/Register';
 import UserProfile from './components/UserProfile';
@@ -21,7 +25,11 @@ function App() {
             <Hero />
             <SpecialOffers />
             <ProductList />
+            <ImageGallery />
+            <About />
+            <Contact />
           </main>
+          <Footer />
           <ShoppingCart />
           <Login />
           <Register />

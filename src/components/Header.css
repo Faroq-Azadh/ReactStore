@@ -55,6 +55,29 @@
   gap: 1rem;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
 .auth-buttons {
   display: flex;
   gap: 0.75rem;
@@ -228,6 +251,11 @@
 
   .nav {
     gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    display: none;
   }
 
   .auth-buttons {
@@ -256,5 +284,16 @@
 
   .cart-text {
     display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-links {
+    gap: 0.25rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
   }
 }
