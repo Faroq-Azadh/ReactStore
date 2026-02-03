@@ -1,0 +1,58 @@
+export const products = [
+  {
+    id: 1,
+    name: 'Wireless Headphones',
+    price: 99.99,
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop',
+    description: 'Premium wireless headphones with noise cancellation',
+  },
+  {
+    id: 2,
+    name: 'Smart Watch',
+    price: 249.99,
+    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop',
+    description: 'Feature-rich smartwatch with fitness tracking',
+  },
+  {
+    id: 3,
+    name: 'Laptop Stand',
+    price: 49.99,
+    image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&h=500&fit=crop',
+    description: 'Ergonomic aluminum laptop stand',
+  },
+  {
+    id: 4,
+    name: 'Mechanical Keyboard',
+    price: 129.99,
+    image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&h=500&fit=crop',
+    description: 'RGB mechanical keyboard with cherry switches',
+  },
+  {
+    id: 5,
+    name: 'Wireless Mouse',
+    price: 39.99,
+    image: 'https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop',
+    description: 'Ergonomic wireless mouse with precision tracking',
+  },
+  {
+    id: 6,
+    name: 'USB-C Hub',
+    price: 59.99,
+    image: 'https://images.unsplash.com/photo-1625842268584-8f3296236761?w=500&h=500&fit=crop',
+    description: 'Multi-port USB-C hub with HDMI and SD card reader',
+  },
+  {
+    id: 7,
+    name: 'Desk Lamp',
+    price: 79.99,
+    image: 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=500&h=500&fit=crop',
+    description: 'LED desk lamp with adjustable brightness',
+  },
+  {
+    id: 8,
+    name: 'Webcam HD',
+    price: 89.99,
+    image: 'https://images.unsplash.com/photo-1587825147138-346fb1865e92?w=500&h=500&fit=crop',
+    description: '1080p HD webcam with built-in microphone',
+  },
+];
